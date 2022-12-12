@@ -1,0 +1,16 @@
+###
+GET http://localhost:8000/
+###
+GET http://localhost:8000/users
+###
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{"firstName":"jule", "lastName": "last", "weight": 180, "age": 22, "height": "6", "gender": "femaale", "intent": "here for a good time", "imagearray": null}
+###
+DELETE http://localhost:8000/users/5
+###      
+PATCH http://localhost:8000/users/3
+Content-Type: application/json
+
+{"age" : "42"}
